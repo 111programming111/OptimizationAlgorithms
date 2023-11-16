@@ -13,9 +13,12 @@ Particle Representation: Each particle is represented as a two-dimensional vecto
 Fitness Function: The fitness function evaluates the quality of each particle's solution. In this case, the fitness function is defined as:
 
 Python
+```
 def fun(self,x1, x2):
     z= (4*x1**2) - (2.1*x1**4)+ ((1/3)*x1**6) + x1*x2 - (4*x2**2) + (4*x2**4)
     return z
+```
+
 Kodu kullanırken dikkatli olun. Daha fazla bilgi
 Parameter Settings: The PSO algorithm parameters are set as follows:
 
@@ -57,9 +60,10 @@ Usage Example
 To run the PSO algorithm, create an instance of the PSO class and call the Run() method. For instance:
 
 Python
+```
 pso = PSO(parca_sayisi=10, itirasyon=50)
 pso.Run()
-
+```
 This will execute the PSO algorithm with 10 particles and 50 iterations, generating the corresponding log file and visualization plots.
 
 
@@ -82,11 +86,11 @@ Parçacık Temsili: Her parçacık, problemdeki iki optimizasyon değişkenine (
 
 Uygunluk Fonksiyonu: Uygunluk fonksiyonu, her parçacığın çözümünün kalitesini değerlendirir. Bu durumda, uygunluk fonksiyonu şu şekilde tanımlanmıştır:
 
-
+```
 def fun(self,x1, x2):
       z= (4*x1**2) - (2.1*x1**4)+ ((1/3)*x1**6) + x1*x2 - (4*x2**2) + (4*x2**4)
       return z
-
+```
 
 Parametre Ayarları: PSO algoritması parametreleri şu şekilde ayarlanmıştır:
 
@@ -129,9 +133,9 @@ Ek olarak, algoritma üç görselleştirme grafiği oluşturur:
 Kullanım Örneği
 
 PSO algoritmasını çalıştırmak için, PSO sınıfının bir örneğini oluşturun ve Run() yöntemini çağırın. Örneğin:
-
+```
 pso = PSO(parca_sayisi=10, itirasyon=50)
 pso.Run()
-
+```
 
 Bu, 10 parçacık ve 50 yineleme ile PSO algoritmasını çalıştıracak ve ilgili günlük dosyasını ve görselleştirme grafiklerini oluşturacaktır.
