@@ -26,16 +26,19 @@ Usage
 To use the DEA algorithm, you can create an instance of the DEA class and call the Run() method. This will run the DEA algorithm for the specified number of iterations.
 
 ##### Python Code
+```
 dea = DEA(IterationsNumber=100, populationLength=10, CR=0.5, getMax=False)
 dea.Run()
-
+```
 
 Output
 
 The DEA algorithm will print the best solution found at each iteration to the console. You can also use the ShowChart() method to visualize the fitness values over the iterations.
 
 ##### Python Code
+```
 dea.ShowChart()
+```
 
 Parameters
 
@@ -48,10 +51,11 @@ getMax: Whether to find the maximum or minimum value.
 Example
 
 ##### Python Code
+```
 dea = DEA(IterationsNumber=10000, populationLength=100, CR=0.5, getMax=False)
 dea.Run()
 dea.ShowChart()
-
+```
 
 
 
@@ -84,9 +88,10 @@ Kullanım
 DEA algoritmasını kullanmak için, DEA sınıfının bir örneğini oluşturun ve Run() yöntemini çağırın. Bu, DEA algoritmasını belirtilen sayıda yineleme için çalıştıracaktır.
 
 ##### Python Code
+```
 dea = DEA(IterationsNumber=100, populationLength=10, CR=0.5, getMax=False)
 dea.Run()
-
+```
 Çıktı
 
 DEA algoritması, her yinelemede bulunan en iyi çözümü konsola yazdıracaktır. Ayrıca, ShowChart() yöntemini yinelemeler boyunca uygunluk değerlerini görselleştirmek için
