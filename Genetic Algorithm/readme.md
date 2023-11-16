@@ -7,16 +7,18 @@ Usage
 To use the GA, you can create an instance of the GeneticAlgorithm class and call the RunAlgorithim() method. This will run the GA for the specified number of iterations.
 
 ##### Python Code
+```
 ga = GeneticAlgorithm(IterationsNumber=100, populationLength=10, CrossoverRatio=0.7, MutateRatio=0.001, minValue=1, maxValue=31)
 ga.RunAlgorithim()
-
+```
 
 Output
 The GA will print the best solution found at each iteration to the console. You can also use the ShowChart() method to visualize the fitness and x values over the iterations.
 
 ##### Python Code
+```
 ga.ShowChart()
-
+```
 Parameters
 The GA has several parameters that can be adjusted to control its behavior. These parameters are:
 
@@ -28,10 +30,11 @@ The GA has several parameters that can be adjusted to control its behavior. Thes
     6-maxValue: The maximum value of the problem variables.
 Example
 ##### Python Code
+```
 ga = GeneticAlgorithm(IterationsNumber=10000, populationLength=100, CrossoverRatio=0.7, MutateRatio=0.001, minValue=1, maxValue=31)
 ga.RunAlgorithim()
 ga.ShowChart()
-
+```
 
 #### ==========================================================TR===================================================================
 
@@ -45,14 +48,18 @@ Kullanım
 GA'yı kullanmak için, GeneticAlgorithm sınıfının bir örneğini oluşturun ve RunAlgorithim() yöntemini çağırın. Bu, GA'yı belirtilen iterasyon sayısı için çalıştıracaktır.
 
 ##### Python Code
+```
 ga = GeneticAlgorithm(IterationsNumber=100, populationLength=10, CrossoverRatio=0.7, MutateRatio=0.001, minValue=1, maxValue=31)
 ga.RunAlgorithim()
+```
 
 Çıktı
 GA, her iterasyonda bulunan en iyi çözümü konsola yazdıracaktır. Ayrıca, yinelemeler boyunca uygunluk ve x değerlerini görselleştirmek için ShowChart() yöntemini de kullanabilirsiniz.
 
 ##### Python Code
+```
 ga.ShowChart()
+```
 
 Parametreler
 GA, davranışını kontrol etmek için ayarlanabilecek birkaç parametreye sahiptir. Bu parametreler şunlardır:
@@ -65,7 +72,9 @@ GA, davranışını kontrol etmek için ayarlanabilecek birkaç parametreye sahi
     6-maxValue: Problem değişkenlerinin maksimum değeri.
 Örnek
 ##### Python Code
+```
 ga = GeneticAlgorithm(IterationsNumber=10000, populationLength=100, CrossoverRatio=0.7, MutateRatio=0.001, minValue=1, maxValue=31)
 ga.RunAlgorithim()
 ga.ShowChart()
+```
 
